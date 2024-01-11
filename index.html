@@ -7,32 +7,33 @@
     <title>Saniya Sheikh</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: cambria, sans-serif, italic;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing:border-box;
+            background-color:black;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #900bd2;
+            color: black(11, 1, 1);
             text-align: center;
-            padding: 1em;
+            padding: 30px;
         }
 
         section {
-            padding: 2em;
-            background-color: white;
-            margin: 1em;
+            padding: 20px;
+            background-color: rgb(176, 103, 245);
+            margin: 5px;
             border-radius: 10px;
         }
 
         h2 {
-            color: #333;
+            color: white;
         }
 
         p {
-            color: #666;
+            color: #130218;
         }
 
         ul {
@@ -41,30 +42,20 @@
         }
 
         li {
-            margin-bottom: 0.5em;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 
 <body>
-
+    <img src="girl.png" alt="hello" class="photo" align="right" width="150">
     <header>
         <h1>Saniya Sheikh</h1>
         <p>Web Developer </p>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About Me:</h2>
         <p>
             Hello! I am a passionate web developer with a keen interest in creating dynamic and responsive websites.
             I love to explore new technologies and find innovative solutions to complex problems.
@@ -73,30 +64,34 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </li>
-            <li>
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
+        <h3>project 1</h3>
+        <p> I have created google homepage interface </p>
+        <h3>Project 2</h3>
+        <p>I've build a basic portfolio website.</p>
+        <div id="project-list"></div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: saniyasheikh080205@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/your-profile</p>
-        <p>GitHub: github.com/your-username</p>
+ <section id="contact">
+        <h2>Contact me</h2>
+     <form id="contact-form">
+         <label for="name">Name:</label>
+         <input type="email" id="email"name="email" required><br></br>>
+         <label for="message"> Message:</label>
+         <textarea id="message" name="message" required></textarea><br></br>
+         <button type="submit">submit</button>     
+     </form>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
-    </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function()
+                                  {
+    const projects=[{name:"project1", description:"description for project1"}, {name:"Project2", description:"description for project2"}];
+    const contactFrom = document.getElementById("contact-form");
+                                      contactForm.addEventListener("submit", function (event){
+                                          event.preventDefault();
+                                          alert("form submitted..");});
+                                  });
+                                          
+                                                      
+    </script>
 </body>
 
 </html>
